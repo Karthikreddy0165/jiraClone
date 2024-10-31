@@ -37,7 +37,7 @@ export default function Component() {
     // Make API call to the signup endpoint
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}api/users`,
+        `api/users`,
         {
           method: "POST",
           headers: {

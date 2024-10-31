@@ -32,7 +32,7 @@ export default function CreateIssue({ toggleModal, projectId }) {
     };
     // console.log(issueData)
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/projects/${projectId}/tasks`, {
+      const response = await fetch(`api/projects/${projectId}/tasks`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
